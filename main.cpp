@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
     if(argc < 2) {
-        printf("\nUsage: ./makemofs [output image file] [boot record file] [extra files' names] ...\n");
+        printf("\nUsage: ./makefxs [output image file] [boot record file] [extra files' names] ...\n");
     } else {
         FILE *image = fopen(argv[1], "w+");
         FILE *mbr   = fopen(argv[2], "r");
