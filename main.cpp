@@ -66,7 +66,6 @@ int main(int argc, char *argv[]) {
 
             for(int j = i; j < 128 + i; j++) {
                 FileDescriptors[j] = cFilename[j - i];
-                printf("%d ", FileDescriptors[j]);
             }
 
             long int sz;
@@ -102,8 +101,8 @@ int main(int argc, char *argv[]) {
 
         fclose(image);
     }
-
+    
     printf("\n");
-
+    
     return 0;
 }
